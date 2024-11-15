@@ -19,6 +19,7 @@ def main():
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
     asteroids = pygame.sprite.Group()
+    shots = pygame.sprite.Group()
 
     clk = pygame.time.Clock()
     dt = 0.0
@@ -30,7 +31,7 @@ def main():
     AsteroidField.containers = (updatable)
     asteroidfield = AsteroidField()
     
-    Shot.containers = (updatable, drawable)
+    Shot.containers = (shots, updatable, drawable)
 
     while True:
 
